@@ -35,7 +35,7 @@
           <button type="submit">Login</button>
           <p style="color: white;">
             Punya pertanyaan?
-            <a style="color: #ec5615; font-weight: bold;" href="wa.me/+627788888888">Hubungi Admin</a>
+            <a id="btn-cs" style="color: #ec5615; font-weight: bold;">Hubungi Admin</a>
           </p>
       </form>
     </div>
@@ -65,6 +65,11 @@
       const usernameInput = document.getElementById('username');
       const passwordInput = document.getElementById('password');
       const yearInput = document.getElementById('year');
+      const btnCs = document.getElementById('btn-cs');
+
+      btnCs.onclick = () => {
+        window.location.href = 'https://wa.me/+6282211314145';
+      };
 
       loginForm.addEventListener('submit', async (event) => {
         event.preventDefault();
